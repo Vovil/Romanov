@@ -1,0 +1,50 @@
+<!doctype html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fontello.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}">
+    <title>РомановЪ</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container container-fluid">
+        <a class="navbar-brand" href="#"><img src="{% static 'img/favicon1.png' %}" alt="" height=33px ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+            <li class="nav-item"><a href="#object" class="nav-link">Объекты</a></li>
+            <li class="nav-item"><a href="#news" class="nav-link">Новости</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Связь</a></li>
+            <li class="nav-item"><a href="tel:89682681368" class="nav-link active">8 (9682) 68 13 68</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% block main%}{%endblock%}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container" id="contact">
+        <div class="container-md">
+            <a class="navbar-brand" href="#"  >
+                Связаться с нами:
+            </a>
+            <div class="justify-content-end">
+                <ul class="navbar-nav nav-bottom">
+                    <li class="nav-item"><a href="https://www.google.com/url?q=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D79682681668%26text%3D%25D0%2597%25D0%25B4%25D1%2580%25D0%25B0%25D0%25B2%25D1%2581%25D1%2582%25D0%25B2%25D1%2583%25D0%25B9%25D1%2582%25D0%25B5&sa=D&sntz=1&usg=AFQjCNG2jRhvQnnYHLdyZ-qBvUCdZAHeXw" class="nav-link"><img src="{% static 'img/w.png' %}" alt=""></a></li>
+                    <li class="nav-item"><a href="" class="nav-link dissablet"><img src="{% static 'img/ww.png' %}" alt=""></a></li>
+                    <li class="nav-item"><a href="" class="nav-link dissablet"><img src="{% static 'img/t.png' %}" alt=""></a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/romanof_realty/" class="nav-link dissablet"><img src="{% static 'img/i.png' %}" alt=""></a></li>
+                    <li class="nav-item"><a href="https://www.youtube.com/channel/UCw1I4Tpyf-2E-essBYWJmjw" class="nav-link"><img src="{% static 'img/y.png' %}" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

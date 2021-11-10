@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+<div class="container">
+	<div class="row bl1">
+		<div class="col-12 col-md-7">
+			<img src="{% static 'img/logo.png' %}" class="logo" >
+		</div>
+		<div class="col-12 col-md-5 align-self-end">
+			<h3>Покупка / Продажа / Оценка</h3>
+			<h3>Юридическое сопровождение</h3>
+			<h3>Бесплатные консультации и подбор</h3>
+			<div style="height: 5vh;"></div>
+			<a href="#label" class="btn-cus">подробнее</a>
+		</div>
+	</div>
+	<div class="row blb lb" id="label">
+		<div class="col col-12 col-md-11 offset-md-1">
+			<h1>Недвижимость, коммерция и земля - наш конёк!</h1>
+		</div>
+		<div class="col-12 col-md-10 offset-md-1">
+			<p>Как мы знаем, покупка недвижимости довольно серьёзный шаг в жизни каждого человека и, соответственно, к этому нужно подходить с особой серьёзностью. Наше агенство поможет вам с покупкой недвижимости.</p>
+		</div>
+	</div>
+	<div class="row blw" id="object">
+		<a class="col col-12 col-md-4" href="https://www.avito.ru/romanov/rossiya/kvartiry">
+			<img src="{% static 'img/m.jpg' %}" alt="">
+			<div class="overlay">
+				<div class="text">Квартиры</div>
+				<div class="button">купить</div>
+			</div>
+		</a>
+		<a class="col col-12 col-md-4" href="https://www.avito.ru/romanov/rossiya/doma_dachi_kottedzhi">
+			<img src="{% static 'img/h.jpg' %}" alt="">
+			<div class="overlay">
+				<div class="text">Дома</div>
+				<div class="button">купить</div>
+			</div>
+		</a>
+		<a class="col col-12 col-md-4" href="https://www.avito.ru/romanov/rossiya/kommercheskaya_nedvizhimost">
+			<img src="{% static 'img/kn.png' %}" alt="">
+			<div class="overlay">
+				<div class="text" style="font-size: 3vw;">Коммерческая недвижимость</div>
+				<div class="button">купить</div>
+			</div>
+		</a>
+	</div>
+	<div class="row blb" id="news">
+		<div class="col-12 col-md-6 n">
+			<img src="{% static 'img/z1.png' %}" alt="">
+		</div>
+		<div class="col-12 col-md-6 n">
+			<img src="{% static 'img/z2.png' %}" alt="">
+		</div>
+		<div class="col-12 col-md-6 offset-md-1 t-yd n">Читайте наши статьи в </div>	
+		<div class="col-12 col-md-4 n m">
+			<a role="button" class="btn btn-custom" href="https://zen.yandex.ru/id/603bcb846cd9133fa60f80d0">
+				<img src="{% static 'img/ya.png' %}" alt="Яндекс Дзэн">
+			</a>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+
